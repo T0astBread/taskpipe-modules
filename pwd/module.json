@@ -1,0 +1,7 @@
+{
+    "name": "pwd",
+    "description": "Echoes the current working directory to module_data/pwd",
+    "operation_modes": "individual|group",
+    "parameters": [],
+    "run_command": "pwd >> ./module_data/pwd"
+}

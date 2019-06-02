@@ -1,0 +1,20 @@
+{
+    "name": "codecopy",
+    "description": "Copies unfiltered source files into a Gradle project template",
+    "operation_modes": "individual|group",
+    "parameters": [
+        {
+            "name": "project_template_path",
+            "description": "The path to the project template (you don't need to remove the sources in advance)"
+        },
+        {
+            "name": "source_path",
+            "description": "The path to the sources you want to copy"
+        },
+        {
+            "name": "target_path",
+            "description": "The path where the copied project should be"
+        }
+    ],
+    "run_command": "java -jar {module_dir}/codecopy.jar {project_template_path} {source_path} {target_path}"
+}

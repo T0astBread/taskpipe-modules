@@ -1,0 +1,1 @@
+val FOO = "I should not be copied anywhere"

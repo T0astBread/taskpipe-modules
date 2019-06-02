@@ -1,0 +1,4 @@
+rootProject.name = 'filter_entries'
+
+include(":mark")
+project(":mark").projectDir = "../mark/common" as File

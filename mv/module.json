@@ -1,0 +1,16 @@
+{
+    "name": "mv",
+    "description": "Moves/renames files and folders; uses the system-native mv",
+    "operation_modes": "individual|group",
+    "parameters": [
+        {
+            "name": "source_path",
+            "description": "The path to the file(s)/folder(s) to move"
+        },
+        {
+            "name": "destination_path",
+            "description": "The path to the file(s)/folder(s) to be moved to"
+        }
+    ],
+    "run_command": "sh -c \"mv {source_path} {destination_path}\""
+}

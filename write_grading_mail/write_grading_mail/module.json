@@ -1,0 +1,7 @@
+{
+    "name": "write_grading_mail",
+    "description": "Writes email reports (without sending them) to students about their grades",
+    "operation_modes": "group",
+    "parameters": [],
+    "run_command": "java -jar {module_dir}/write_grading_mail.jar"
+}

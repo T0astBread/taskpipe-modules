@@ -1,0 +1,25 @@
+{
+    "name": "moodle_data_grabber",
+    "description": "Logs into Moodle and downloads assignment submissions + submission data",
+    "operation_modes": "group",
+    "parameters": [
+      {
+        "name": "moodle_base_url",
+        "description": "The location where the instance of Moodle to log into and download from is hosted at. Needs to look like this: http[s]://my.school.com/path/to/moodle (no trailing slash)"
+      },
+      {
+        "name": "username",
+        "description": "The username of the Moodle account to use for downloading"
+      },
+      {
+        "name": "password",
+        "description": "The password of the Moodle account to use for downloading"
+      },
+      {
+        "name": "assignment_id",
+        "description": "The ID of the assignment of which submissions will be downloaded"
+      }
+    ],
+    "run_command": "node --experimental-modules {module_dir}/index.mjs true {moodle_base_url} {username} {password} {assignment_id}"
+  }
+  

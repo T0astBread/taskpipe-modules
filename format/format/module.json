@@ -1,0 +1,7 @@
+{
+    "name": "format",
+    "description": "Fixes the pipeline execution directory's folder structure",
+    "operation_modes": "group",
+    "parameters": [],
+    "run_command": "java -jar {module_dir}/format.jar"
+}

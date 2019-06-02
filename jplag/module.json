@@ -1,0 +1,22 @@
+{
+    "name": "jplag",
+    "description": "Compares software source code to detect plagiarism amongst entries",
+    "operation_modes": "group",
+    "parameters": [
+        {
+            "name": "dir",
+            "description": "The name of the directories to detect as software (for example: src)"
+        },
+        {
+            "name": "exclude",
+            "description": "All files named in this parameter will be ignored"
+        },
+        {
+            "name": "language",
+            "description": "The language setting for JPlag"
+        }
+    ],
+    "run_command": {
+        "linux": "sh {module_dir}/jplag.sh {module_dir} {dir} {exclude} {language}"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "sendmail",
+    "description": "Sends email from Mailfiles in the module_data/email folder",
+    "operation_modes": "group|individual",
+    "parameters": [],
+    "run_command": "java -jar {module_dir}/sendmail.jar"
+}

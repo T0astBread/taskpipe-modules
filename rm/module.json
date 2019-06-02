@@ -1,0 +1,12 @@
+{
+    "name": "rm",
+    "description": "Removes files and folders; uses the system-native rm",
+    "operation_modes": "individual|group",
+    "parameters": [
+        {
+            "name": "path",
+            "description": "The path to the file(s)/folder(s) to remove"
+        }
+    ],
+    "run_command": "sh -c \"rm -rf {path}\""
+}

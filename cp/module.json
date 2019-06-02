@@ -1,0 +1,16 @@
+{
+    "name": "cp",
+    "description": "Copies files and folders; uses the system-native cp",
+    "operation_modes": "individual|group",
+    "parameters": [
+        {
+            "name": "source_path",
+            "description": "The path to the file(s)/folder(s) to move"
+        },
+        {
+            "name": "destination_path",
+            "description": "The path to the file(s)/folder(s) to be moved to"
+        }
+    ],
+    "run_command": "sh -c \"mkdir -p $(dirname {destination_path}); cp -r {source_path} {destination_path}\""
+}

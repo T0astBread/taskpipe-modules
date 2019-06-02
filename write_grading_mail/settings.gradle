@@ -1,0 +1,4 @@
+rootProject.name = 'write_grading_mail'
+
+include(":mark")
+project(":mark").projectDir = new File("../mark/common")

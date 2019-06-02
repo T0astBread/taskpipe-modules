@@ -1,0 +1,20 @@
+{
+    "name": "filter_entries",
+    "description": "Deletes entries that do not conain a file whole path matches the provided regular expression",
+    "operation_modes": "group",
+    "parameters": [
+        {
+            "name": "path_filter_regex",
+            "description": "The regex to test against"
+        },
+        {
+            "name": "mark_not_matching",
+            "description": "Should non-matching entries be marked instead of deleted?"
+        },
+        {
+            "name": "marking_reason",
+            "description": "The reason to mark non-matching entries with (if mark_not_matching is true)"
+        }
+    ],
+    "run_command": "java -jar {module_dir}/filter_entries.jar {path_filter_regex} {mark_not_matching} {marking_reason}"
+}
