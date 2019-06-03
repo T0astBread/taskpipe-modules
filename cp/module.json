@@ -12,5 +12,8 @@
             "description": "The path to the file(s)/folder(s) to be moved to"
         }
     ],
-    "run_command": "sh -c \"mkdir -p $(dirname {destination_path}); cp -r {source_path} {destination_path}\""
+    "run_command": {
+        "linux": "sh -c \"mkdir -p $(dirname {destination_path}); cp -r {source_path} {destination_path}\"",
+        "windows": "PowerShell -Command \"Copy-Item {source_path} -Destination {destination_path} -Recurse -Force\""
+    }
 }

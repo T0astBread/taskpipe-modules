@@ -12,5 +12,8 @@
             "description": "The task to execute"
         }
     ],
-    "run_command": "sh -c \"gradle -b ./content/{project_path}/build.gradle {task} || true\""
+    "run_command": {
+        "linux": "sh -c \"gradle -b ./content/{project_path}/build.gradle {task} || true\"",
+        "windows": "cmd.exe /c {module_dir}\\gradle.bat {project_path} {task}"
+    }
 }

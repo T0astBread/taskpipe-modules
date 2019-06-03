@@ -13,6 +13,7 @@
    }
   ],
   "run_command": {
-    "linux": "unzip {archive_file} -d {destination_path}"
+    "linux": "unzip {archive_file} -d {destination_path}",
+    "windows": "{module_dir}\\7zip\\7za.exe x -o{destination_path} {archive_file}"
   }
 }

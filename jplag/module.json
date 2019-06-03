@@ -17,6 +17,7 @@
         }
     ],
     "run_command": {
-        "linux": "sh {module_dir}/jplag.sh {module_dir} {dir} {exclude} {language}"
+        "linux": "sh {module_dir}/jplag.sh {module_dir} {dir} {exclude} {language}",
+        "windows": "cmd.exe /c {module_dir}\\jplag.bat {module_dir} {dir} {language} {exclude}"
     }
 }
