@@ -28,7 +28,7 @@ fun writeReports() {
     val testRuns = mutableListOf<TestRun>()
 
     val aggregateReportFile = File(aggregateReportDir, "grading_report.txt")
-    PrintStream(aggregateReportFile).use { aggregateReportFileStream ->
+    PrintStream(aggregateReportFile, "utf-8").use { aggregateReportFileStream ->
         moodleData.submissions.forEach { submission ->
             val submissionDir = findSubmissionEntryDir(submission.name) ?: return@forEach
 
@@ -42,7 +42,7 @@ fun writeReports() {
             val emailDataDir = File(submissionDir, "module_data/email")
             emailDataDir.mkdirs()
             val mailFile = File(emailDataDir, "report_mail.mailfile")
-            PrintStream(mailFile).use { mailFileStream ->
+            PrintStream(mailFile, "utf-8").use { mailFileStream ->
                 writeEmail(
                     moodleData.assignmentName,
                     submission,
