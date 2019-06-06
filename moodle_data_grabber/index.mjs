@@ -35,7 +35,7 @@ const init = async () => {
 
     const browser = await puppeteer.launch({
         headless: !isInDevMode(),
-        slowMo: 40,
+        slowMo: 100,
         userDataDir: browserDataDir
     })
 
